@@ -1,0 +1,49 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-align {
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav {
+  justify-content: space-between;
+  align-items: center;
+
+  width: 70px;
+  height: 100vh;
+
+  box-sizing: border-box;
+
+  padding: 20px 10px;
+
+  background: rgba(0, 215, 195, 0.65);
+}
+
+.nav-icon {
+  width: 45px;
+  height: 45px;
+}
+
+.nav-icon-avatar {
+  margin-bottom: 25px;
+}
+
+.chat-icons {
+  min-height: 250px;
+}
+
+.other-icons {
+  min-height: 110px;
+}
+
+.content {
+
+}
