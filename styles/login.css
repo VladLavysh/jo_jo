@@ -11,8 +11,13 @@ body {
 }
 
 .block{
-    height: 100%;
-    width: 500px;
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 560px;
+    width: 700px;
     margin: auto;
     display: flex;
     flex-direction: column;
@@ -22,6 +27,15 @@ body {
 
 .input_label{
     align-self: flex-start;
+}
+
+.input_fields {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    height: 200px;
+    margin: 20px 0;
 }
 
 .logowanie{
@@ -58,7 +72,8 @@ body {
 }
 
 .zaloguj{
-    font-family: 'Almarai', sans-serif;
-    font-size: 35px;
+    /*font-family: 'Almarai', sans-serif;*/
+    font-family: sans-serif;
+    font-size: 32px;
     color: #007A6E;
 }
