@@ -1,6 +1,6 @@
+/* Settings */
 body {
-  margin: 0;
-  padding: 0;
+  background-color: unset;
 }
 
 .flex-column {
@@ -9,8 +9,9 @@ body {
 }
 
 .flex-align {
-  align-items: center;
+  display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .nav {
@@ -46,6 +47,150 @@ body {
   min-height: 110px;
 }
 
-.content {
+.settings-container {
+  display: flex;
+  justify-content: space-between;
+}
 
+.settings_avatar_wrapper {
+  flex: 3;
+  text-align: center;
+}
+
+.settings_avatar {
+  width: 150px;
+  height: 150px;
+}
+
+.settings-content {
+  font-size: 30px;
+}
+
+.settings-select {
+  position: relative;
+
+  padding: 0 15px;
+
+  font-size: 20px;
+  font-family: sans-serif;
+}
+
+/*.settings-select:hover, .settings-select:focus {
+  outline: none;
+}
+
+.settings-select::before {
+  position: absolute;
+  content: "000";
+  color: green;
+  top: 5px;
+  right: 10px;
+  width: 10px;
+  height: 10px;
+  z-index: 999;
+}*/
+
+/*.settings-select > option {
+  color: red;
+}*/
+
+.select-fields {
+  flex: 1;
+  align-items: unset;
+}
+
+.pass-color {
+  max-width: 500px;
+  height: 250px;
+
+  flex: 1;
+  justify-content: space-between;
+
+  padding-top: 10px;
+  margin-left: 50px;
+}
+
+.pass-color-item {
+  line-height: 70px;
+}
+
+.pass-color img {
+  width: 70px;
+  height: 70px;
+}
+
+.user-data {
+  padding: 30px;
+}
+
+.user-data-secondary {
+  margin-top: 70px;
+  height: 400px;
+}
+
+.user-data-main {
+  display: flex;
+  height: 280px;
+}
+
+.settings_label {
+  color: #000000;
+}
+
+.setting-action-btns {
+  position: absolute;
+  bottom: 20px;
+  right: 30px;
+}
+
+.setting-action-btns > button {
+  min-width: 220px;
+  padding: 10px 30px;
+
+  font-size: 30px;
+  color: #fff;
+
+  background-color: #3BE7D7;
+  border: 2px solid #007A6E;
+  border-radius: 15px;
+
+  cursor: pointer;
+}
+
+/* Modal */
+.modal-background {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+
+  z-index: 1000;
+
+  background-color: #000000;
+  opacity: 0.5;
+}
+
+.modal-content {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+
+  height: 350px;
+  width: 500px;
+
+  transform: translate(-50%, -50%);
+  z-index: 1001;
+
+  background-color: #fff;
+  color: #000;
+
+  border-radius: 20px;
+  padding: 50px 70px;
+}
+.modal-inputs div {
+  margin-bottom: 10px;
+}
+.modal-btns {
+  position: static;
 }
