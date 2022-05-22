@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../../styles/main.css">
+  <title>Konfiguracja</title>
+</head>
+
+<body>
+  <div class="settings-container">
+    <!-- Модальное окно изменения цвета приложения/чатов -->
+    <div class="modal">
+      <div class="modal-content flex-column flex-align">
+        <span class="modal-title">Zmiana koloru</span>
+        <div>Color Picker</div>
+
+        <div class="w100 modal-btns setting-action-btns flex-align">
+          <button>
+            <a href="settings.html">Anulować</a>
+          </button>
+          <button>
+            <a href="settings.html">Zapisz</a>
+          </button>
+        </div>
+      </div>
+
+      <div class="modal-background"></div>
+    </div>
+
+    <!-- Навигационная панель слева -->
+    <aside class="nav flex-column">
+      <div class="chat-icons flex-align flex-column">
+        <img class="nav-icon-avatar cursor-pointer" src="../../images/add_image.png" alt="user_icon">
+
+        <img class="nav-icon cursor-pointer" src="../../images/chat.png" alt="user_icon">
+        <img class="nav-icon cursor-pointer" src="../../images/new_message.png" alt="user_icon">
+        <img class="nav-icon cursor-pointer" src="../../images/add_group.png" alt="user_icon">
+      </div>
+
+      <div class="other-icons flex-align flex-column">
+        <img class="nav-icon cursor-pointer" src="../../images/settings.png" alt="user_icon">
+        <img class="nav-icon cursor-pointer" src="../../images/exit.png" alt="user_icon">
+      </div>
+    </aside>
+
+    <!-- Контент настроек -->
+    <main class="w100 settings-content">
+      <div class="user-data">
+        <section class="user-data-main flex-align">
+          <div class="settings_avatar_wrapper">
+            <img class="nav-icon-avatar settings_avatar" src="../../images/add_image.png" alt="user_icon">
+          </div>
+
+          <div class="h100 flex-column flex-align">
+            <div class="flex-column">
+              <label class="input_label settings_label">Imię</label>
+              <input class="input_wh input" type="text">
+            </div>
+            <div class="flex-column">
+              <label class="input_label settings_label">Nazwisko</label>
+              <input class="input_wh input" type="text">
+            </div>
+            <div class="flex-column">
+              <label class="input_label settings_label">Pseudonim</label>
+              <input class="input_wh input" type="text">
+            </div>
+          </div>
+        </section>
+
+        <section class="user-data-secondary flex-align">
+          <div class="h100 flex-column flex-align select-fields">
+            <div class="flex-column">
+              <label for="uni" class="input_label settings_label">Wybierz uniwersytet, na którym studiujesz</label>
+              <select class="input_wh input settings-select" name="uni" id="uni">
+                <option value="uni_lodz">Uniwersytet Łódzki</option>
+                <option value="uni_warszaw">Uniwersytet Warszawski</option>
+                <option value="uni_poznań">Uniwersytet Poznański</option>
+              </select>
+            </div>
+            <div class="flex-column">
+              <label for="wydzial" class="input_label settings_label">Wybierz wydział</label>
+              <select class="input_wh input settings-select" name="wydzial" id="wydzial">
+                <option value="fiis">Fizyka i Informatyka Stosowana</option>
+                <option value="mii">Matematyka i Informatyka</option>
+              </select>
+            </div>
+            <div class="flex-column">
+              <label for="kierun" class="input_label settings_label">Wybierz kierunek</label>
+              <select class="input_wh input settings-select" name="kierun" id="kierun">
+                <option value="inf">Informatyka</option>
+                <option value="fiz">Fizyka</option>
+                <option value="mat">Matematyka</option>
+              </select>
+            </div>
+            <div class="flex-column">
+              <label for="sem" class="input_label settings_label">Wybierz semestr</label>
+              <select class="input_wh input settings-select" name="sem" id="sem">
+                <option value="1">1 sem</option>
+                <option value="2">2 sem</option>
+                <option value="3">3 sem</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="flex-column flex pass-color">
+            <div class="flex-align pass-color-item">
+              <span class="input_label settings_label">Zmiana hasła</span>
+              <img class="nav-icon" src="../../images/unlock.png" alt="user_icon">
+            </div>
+            <div class="flex-align pass-color-item">
+              <span class="input_label settings_label">Zmiana koloru aplikacji</span>
+              <img class="nav-icon" src="../../images/rgb_circle.png" alt="user_icon">
+            </div>
+            <div class="flex-align pass-color-item">
+              <span class="input_label settings_label">Zmiana koloru tła czatów</span>
+              <img class="nav-icon" src="../../images/rgb_circle.png" alt="user_icon">
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <!-- Кнопки -->
+    <aside class="setting-action-btns">
+      <button>Anulować</button>
+      <button>Zapisz</button>
+    </aside>
+  </div>
+</body>
+
+</html>

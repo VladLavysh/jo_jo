@@ -10,6 +10,7 @@ body {
   padding: 0;
 
   font-family: sans-serif;
+  color: #000;
 }
 
 .w100 {
@@ -18,4 +19,13 @@ body {
 
 .h100 {
   height: 100%;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+a, a:hover, a:focus, a:active {
+  text-decoration: none;
+  color: inherit;
 }

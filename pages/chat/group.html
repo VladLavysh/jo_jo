@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="../../styles/main.css" rel="stylesheet">
+  <title>Czaty</title>
+</head>
+
+<body>
+  <div class="chats-container">
+    <!-- Навигационная панель слева -->
+    <aside class="nav flex-column">
+      <div class="chat-icons flex-align flex-column">
+        <img class="nav-icon-avatar cursor-pointer" src="../../images/add_image.png" alt="user_icon">
+
+        <img class="nav-icon cursor-pointer" src="../../images/chat.png" alt="user_icon">
+        <a href="add_person.html">
+          <img class="nav-icon cursor-pointer" src="../../images/new_message.png" alt="user_icon">
+        </a>
+        <a href="add_chat.html">
+          <img class="nav-icon cursor-pointer" src="../../images/add_group.png" alt="user_icon">
+        </a>
+      </div>
+
+      <div class="other-icons flex-align flex-column">
+        <a href="../settings/settings.html">
+          <img class="nav-icon cursor-pointer" src="../../images/settings.png" alt="user_icon">
+        </a>
+        <a href="../login/login.html">
+          <img class="nav-icon cursor-pointer" src="../../images/exit.png" alt="user_icon">
+        </a>
+      </div>
+    </aside>
+
+
+    <main class="w100 chats-content">
+      <!-- Все чаты -->
+      <aside class="chats-all-chats">
+        <!-- Групповые чаты -->
+        <div class="chats-group-chats">
+          <div class="chats-all-label">
+            <span>Czaty grupowe</span>
+          </div>
+
+          <div class="chats-all-list flex-column">
+            <div class="chats-chat cursor-pointer chats-chat-selected">
+              <img class="chats-chat-icon" src="../../images/add_image.png" alt="user_icon">
+              <span>Inżynieria oprogramowania</span>
+            </div>
+
+            <div class="chats-chat cursor-pointer">
+              <img class="chats-chat-icon" src="../../images/add_image.png" alt="user_icon">
+              <span>Metody numeryczne</span>
+            </div>
+
+            <div class="chats-chat cursor-pointer">
+              <img class="chats-chat-icon" src="../../images/add_image.png" alt="user_icon">
+              <span>Nazwa czatu</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Личные чаты -->
+        <div class="chats-personal-chats">
+          <div class="chats-all-label">
+            <span>Prywatne czaty</span>
+          </div>
+
+          <div class="flex-column">
+            <div class="chats-chat cursor-pointer">
+              <img class="chats-chat-icon" src="../../images/add_image.png" alt="user_icon">
+              <a href="personal.html">
+                <span>Alicja Kowalska</span>
+              </a>
+            </div>
+
+            <div class="chats-chat cursor-pointer">
+              <img class="chats-chat-icon" src="../../images/add_image.png" alt="user_icon">
+              <a href="personal.html">
+                <span>Michał Nowak</span>
+              </a>
+
+              <div class="chats-chat-notification">2</div>
+            </div>
+
+            <div class="chats-chat cursor-pointer">
+              <img class="chats-chat-icon" src="../../images/add_image.png" alt="user_icon">
+              <a href="personal.html">
+                <span>Paweł Kamiński</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </aside>
+
+      <!-- Выбранный чат -->
+      <section class="chats-selected-chat flex-column">
+        <div class="selected-chat-label chats-chat-selected flex-align">
+          <div class="chats-chat">
+            <img class="chats-chat-icon" src="../../images/add_image.png" alt="user_icon">
+            <span>Inżynieria oprogramowania</span>
+          </div>
+
+          <div>
+            <a href="report.html">
+              <img class="chats-chat-icon cursor-pointer" src="../../images/spam.png" alt="user_icon">
+            </a>
+            <img class="chats-chat-icon cursor-pointer" src="../../images/delete.png" alt="user_icon">
+          </div>
+        </div>
+
+        <div class="selected-chat-content flex-column">
+          <div class="selected-chat-messages flex-column">
+            <div class="message-not-user flex-column">
+              <span class="message-subtext">Alicja Kowalska</span>
+              <span class="message-text">Cześć, Mateusz!</span>
+              <span class="message-subtext">1 kwietnia 14:20</span>
+            </div>
+            <div class="message-user flex-column">
+              <span class="message-subtext">Paweł Kamiński</span>
+              <span class="message-text">Hej</span>
+              <span class="message-subtext">1 kwietnia 14:22</span>
+            </div>
+            <div class="message-not-user flex-column">
+              <span class="message-subtext">Michał Nowak</span>
+              <span class="message-text">Cześć</span>
+              <span class="message-subtext">1 kwietnia 14:40</span>
+            </div>
+            <div class="message-not-user flex-column">
+              <span class="message-subtext">Ada Zielińska</span>
+              <span class="message-text">Witam</span>
+              <span class="message-subtext">1 kwietnia 14:55</span>
+            </div>
+          </div>
+          <div class="selected-chat-input">
+            <input class="input_wh input" type="text">
+            <img class="emoji-icon" src="../../images/fun.png" alt="user_icon">
+            <div class="send-icon">
+              <img src="../../images/send.png" alt="user_icon">
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,294 @@
+
+/* All Chats */
+.chats-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.chats-content {
+  display: flex;
+}
+
+.chats-all-chats {
+  flex: 1.5;
+
+  border-right: 2px solid rgb(24, 159, 155);
+}
+
+.chats-group-chats {
+  height: 50%;
+  border-bottom: 2px solid rgb(24, 159, 155);
+}
+
+.chats-personal-chats {
+  height: 50%;
+}
+
+.chats-all-label {
+  width: 100%;
+  padding: 10px;
+  font-size: 30px;
+
+  box-sizing: border-box;
+  border-bottom: 2px solid rgb(24, 159, 155);
+}
+
+.chats-chat-icon {
+  width: 60px;
+  height: 60px;
+
+  margin-right: 20px;
+}
+
+.chats-chat {
+  display: flex;
+  justify-content: left;
+
+  height: 75px;
+  font-size: 25px;
+  align-items: center;
+
+  padding: 0 20px;
+
+  /*background-color: aqua;*/
+  border-bottom: 2px solid rgb(24, 159, 155);
+}
+
+.chats-chat-notification {
+  font-size: 18px;
+
+  padding: 2px 15px;
+  margin-left: 15px;
+
+  background-color: #00D7C3A6;
+  border-radius: 20px;
+}
+
+.chats-chat-selected {
+  background-color: #00D7C326;
+}
+
+/* Selected Chat */
+.chats-selected-chat {
+  flex: 5;
+  justify-content: space-between;
+}
+
+.selected-chat-label {
+  display: flex;
+
+  border-bottom: 2px solid rgb(24, 159, 155);
+}
+
+.selected-chat-label > .chats-chat {
+  border-bottom: none;
+
+  font-size: 30px;
+}
+
+.selected-chat-content {
+  /*justify-content: flex-end;*/
+  padding: 15px;
+}
+
+.selected-chat-messages {
+  display: flex;
+  justify-content: space-between;
+  font-size: 20px;
+}
+
+.message-user {
+  align-self: flex-end;
+  margin-bottom: 15px;
+}
+
+.message-user > .message-text {
+  width: fit-content;
+  align-self: flex-end;
+
+  background: rgba(0, 215, 195, 0.15);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+  border: 2px solid #007A6E;
+  border-radius: 20px;
+
+  margin-bottom: 10px;
+  padding: 10px;
+}
+
+.message-not-user {
+  align-self: flex-start;
+  margin-bottom: 15px;
+}
+
+.message-not-user > .message-text{
+  width: fit-content;
+  align-self: flex-start;
+
+  background: #FFFFFF;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+  border: 2px solid #007A6E;
+  border-radius: 20px;
+
+  margin-bottom: 10px;
+  padding: 10px;
+}
+
+.message-subtext {
+  font-family: sans-serif;
+  font-size: 15px;
+
+  color: #000;
+
+  margin-bottom: 5px;
+}
+
+.message-not-user > .message-subtext {
+  align-self: flex-start;
+}
+
+.message-user > .message-subtext {
+  align-self: flex-end;
+}
+
+.selected-chat-input {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  position: relative;
+
+  margin-top: 50px;
+}
+
+.selected-chat-input > input {
+  width: 92%;
+
+  font-size: 20px;
+  padding: 0 10px;
+}
+
+.emoji-icon {
+  position: absolute;
+  bottom: 16px;
+  right: 90px;
+  width: 35px;
+  border-radius: 50%;
+
+  cursor: pointer;
+}
+
+.send-icon > img {
+  width: 60px;
+  border-radius: 50%;
+
+  cursor: pointer;
+}
+
+/* Modal */
+.chat-modal {
+  width: 670px !important;
+}
+
+.add-chat-modal {
+  height: auto !important;
+}
+.add-chat-user {
+  height: 70px;
+  line-height: 70px;
+}
+.add-chat-user > img {
+  width: 70px;
+  height: 70px;
+  margin-right: 20px;
+  margin-top: 20px;
+}
+
+.create-chat-icon {
+  width: 150px;
+}
+
+.chat-btns {
+  margin-top: 20px;
+}
+
+.chat-users {
+  flex: 3;
+
+  align-items: unset;
+  border-left: 2px solid rgb(24, 159, 155);
+  padding: 15px;
+
+  font-size: 30px;
+}
+
+.chat-users > img {
+  width: 100px;
+  height: 100px;
+}
+
+.change-admin {
+  height: 60px;
+  line-height: 60px;
+}
+
+.change-admin > img {
+  width: 60px;
+  height: 60px;
+}
+
+.change-admin > span {
+  font-size: 25px;
+}
+
+.chat-user {
+  height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.chat-user span{
+  font-size: 25px;
+  margin: 0 25px;
+}
+
+.chat-user img {
+  width: 50px;
+  height: 50px;
+
+  margin: 0;
+}
+
+.chat-user > img {
+  width: 35px;
+  height: 35px;
+}
+
+.admin-users-btn {
+  width: 65%;
+  height: 40px;
+
+  font-size: 20px;
+
+  background: #3BE7D7;
+  border: 2px solid #007A6E;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
+}
+
+.report-admin-wrapper {
+  min-width: 450px;
+  border: 2px solid #007A6E;
+  border-radius: 10px;
+
+  font-size: 25px;
+
+  padding: 10px;
+  margin-bottom: 15px;
+}
+
+.report-admin-btns {
+  font-size: 25px !important;
+}
