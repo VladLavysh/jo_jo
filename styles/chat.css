@@ -27,7 +27,7 @@
 .chats-all-label {
   width: 100%;
   padding: 10px;
-  font-size: 30px;
+  font-size: 25px;
 
   box-sizing: border-box;
   border-bottom: 2px solid rgb(24, 159, 155);
@@ -45,7 +45,7 @@
   justify-content: left;
 
   height: 75px;
-  font-size: 25px;
+  font-size: 20px;
   align-items: center;
 
   padding: 0 20px;
@@ -83,7 +83,7 @@
 .selected-chat-label > .chats-chat {
   border-bottom: none;
 
-  font-size: 30px;
+  font-size: 25px;
 }
 
 .selected-chat-content {

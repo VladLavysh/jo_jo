@@ -63,7 +63,7 @@ body {
 }
 
 .settings-content {
-  font-size: 30px;
+  font-size: 25px;
 }
 
 .settings-select {
@@ -124,13 +124,13 @@ body {
 }
 
 .user-data-secondary {
-  margin-top: 70px;
-  height: 400px;
+  margin-top: 30px;
+  height: 350px;
 }
 
 .user-data-main {
   display: flex;
-  height: 280px;
+  height: 245px;
 }
 
 .settings_label {
