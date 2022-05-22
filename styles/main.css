@@ -1,6 +1,8 @@
+/*Import czcionek*/
 @import url('https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Almarai:wght@300&display=swap');
 
+/*Import plików*/
 @import url(login.css);
 @import url(chat.css);
 @import url(settings.css);
